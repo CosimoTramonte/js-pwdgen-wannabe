@@ -9,3 +9,26 @@ Chiedi all’utente: il suo nome, il suo cognome ed il suo colore preferito. Il 
 5) possibili controlli per ogni passaggio con "console.log"
 
 */
+
+//Chiedo le info
+const name = prompt("Come ti chiami?");
+const surname = prompt("Qual'è il tuo cognome?");
+const color = prompt("Qual'è il tuo colore preferito?");
+let age = 23
+
+//controllo se ricevo le info
+console.log(name, surname, color);
+
+//creo un output che scrive lr info in html
+const output = `
+Il tuo nome è ${name} <br>
+Il tuo cognome è ${surname} <br>
+Il tuo colore preferito è ${color}
+`
+//controllo se l'output è corretto
+console.log(output);
+
+//scrivo l'output in html
+document.getElementById("informations").innerHTML = output
+
+document.getElementById("info").innerHTML = name + " " + surname + " " + color + " " + age
